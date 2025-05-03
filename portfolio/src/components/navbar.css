@@ -1,0 +1,50 @@
+/* Base styling for the navigation */
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Nexa';
+}
+
+a:hover {
+    color: #dcd8d8;
+    text-decoration: none;
+}
+
+/* Responsive media query for small screens (max-width: 640px) */
+@media (max-width: 640px) {
+    nav {
+        position: fixed; /* Fix the navbar on the side */
+        top: 0;
+        left: 0;
+        width: 200px; /* Sidebar width */
+        height: 100%;
+        background-color: rgba(25, 25, 25, 0.9); /* Dark background */
+        padding-top: 20px;
+        transition: transform 0.3s ease; /* Smooth slide-in animation */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        gap: 1rem; /* Space between items */
+        padding-left: 1.5rem; /* Adjust spacing */
+        padding-right: 1.5rem;
+        margin: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    a {
+        font-size: 1.2rem; /* Maintain font size */
+        padding: 10px 0; /* Vertical padding for click area */
+    }
+
+    a:hover {
+        background: linear-gradient(90deg, #191919, #000); /* Gradient on hover */
+        border-radius: 5px;
+    }
+}

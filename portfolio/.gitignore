@@ -1,0 +1,59 @@
+# Node modules
+/node_modules/
+
+# Build output
+/dist/
+/build/
+/.esbuild/
+
+# Dependencies
+/package-lock.json
+/yarn.lock
+
+# IDE files
+/.idea/
+/.vscode/
+/*.iml
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+/.env
+/.env.local
+/.env.*.local
+
+# Coverage
+/coverage/
+
+# Temporary files
+*.swp
+*.swo
+
+# React specific
+/.next/
+/out/
+/public/build/
+/public/static/
+
+# TypeScript
+*.tsbuildinfo
+
+# .eslintcache
+/.eslintcache
+
+# Swiper generated files (if any)
+.swiper/
+
+# Storybook files (if you're using Storybook)
+/.storybook/
+
+# Other files
+*.bak
+*.tmp
