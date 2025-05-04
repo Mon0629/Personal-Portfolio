@@ -9,20 +9,20 @@ function Home() {
     return (
         <div className="w-screen h-screen overflow-auto">
             <Navbar />
-            <section id="home" className="min-h-screen w-full flex flex-col justify-end pl-10 pb-20 items-start">
+            <section id="home" className="min-h-screen w-full flex flex-col justify-end pl-10 pb-20 items-start mobile-home">
                 <span className="text-large font-[Lora] mb-0 -mt-5 tracking-tighter">code smarter</span>
                 <h1 className="text-huge mb-0 -mt-20 tracking-tighter font-[Montserrat]">
                     Work Harder {'</>'}
                 </h1>
             </section>
 
-            <section id="profile" className="w-full min-h-screen">
-                <div className='flex flex-row pl-10 pb-20 items-start gap-15 pt-35'>
-                    <div className='bg-[#cccccc] pt-2'>
+            <section id="profile" className="w-full min-h-screen mobile-profile">
+                <div className='profile-container'>
+                    <div className='profile-image'>
                         <img src={Profile} alt="Profile" />
                     </div>
-                    <div className='max-w-full h-135 w-220'>
-                        <p className='font-[Nexa] text-justify text-xl text-[#B1A4A4] leading-8 tracking-tight'>Hello! I'm Mon, a passionate Computer Science student with a strong ambition to become a software and cloud engineer.
+                    <div className='profile-content'>
+                        <p className='profile-text'>Hello! I'm Mon, a passionate Computer Science student with a strong ambition to become a software and cloud engineer.
                         With a solid foundation in coding fundamentals, problem-solving, and software development, I have developed skills across multiple programming 
                         languages, frameworks, and tools. From building interactive mobile applications and working with cloud services like Firebase, to
                          exploring data structures and algorithms, my journey in software development has been diverse and exciting. I'm driven by creating 
@@ -30,66 +30,66 @@ function Home() {
                          My goal is to contribute to impactful software solutions and work with cutting-edge technologies in a collaborative and dynamic environment.
                          </p>
                          <br />
-                         <p className='font-[Montserrat] flex flex-row justify-start items-center text-xl'><img src={Skills}/> Skills: </p>
+                         <p className='skills-title'><img src={Skills} alt="Skills icon"/> Skills: </p>
                         <br />
                          <div>
-                            <ul className="list-inside text-[#B1A4A4] font-[Nexa] text-justify text-xl leading-8 tracking-tight flex flex-wrap gap-2">
-                            <li className="bg-[#d4d4d4] text-black px-4 py-2 rounded-full">
+                            <ul className="skills-list">
+                            <li className="skill-item">
                                 <Tooltip title="A high-level, class-based, object-oriented programming language." arrow>
                                     <span>Java</span>
                                 </Tooltip>
                             </li>
-                            <li className="bg-[#d4d4d4] text-black px-4 py-2 rounded-full">
+                            <li className="skill-item">
                                  <Tooltip title="A high-level, interpreted programming language known for its readability and simplicity." arrow>
                                     <span>Python</span>
                                 </Tooltip>
                             </li>
-                            <li className="bg-[#d4d4d4] text-black px-4 py-2 rounded-full">
+                            <li className="skill-item">
                                 <Tooltip title="A superset of JavaScript that adds optional static typing." arrow>
                                     <span>TypeScript</span>
                                 </Tooltip>
                             </li>
-                            <li className="bg-[#d4d4d4] text-black px-4 py-2 rounded-full">
+                            <li className="skill-item">
                                 <Tooltip title="A JavaScript library for building user interfaces, maintained by Facebook." arrow>
                                     <span>React</span>
                                 </Tooltip>
                             </li>
-                            <li className="bg-[#d4d4d4] text-black px-4 py-2 rounded-full">
+                            <li className="skill-item">
                                 <Tooltip title="A runtime for executing JavaScript code outside the browser." arrow>
                                     <span>Node.js</span>
                                 </Tooltip>
                             </li>
-                            <li className="bg-[#d4d4d4] text-black px-4 py-2 rounded-full">
+                            <li className="skill-item">
                                 <Tooltip title="A platform for building mobile and web applications, with backend services." arrow>
                                     <span>Firebase</span>
                                 </Tooltip>
                             </li>
-                            <li className="bg-[#d4d4d4] text-black px-4 py-2 rounded-full">
+                            <li className="skill-item">
                                 <Tooltip title="Standard technologies for creating and styling web pages." arrow>
                                     <span>HTML/CSS</span>
                                 </Tooltip>
                             </li>
-                            <li className="bg-[#d4d4d4] text-black px-4 py-2 rounded-full">
+                            <li className="skill-item">
                                 <Tooltip title="A modern object-oriented programming language developed by Microsoft." arrow>
                                     <span>C#</span>
                                 </Tooltip>
                             </li>
-                            <li className="bg-[#d4d4d4] text-black px-4 py-2 rounded-full">
+                            <li className="skill-item">
                                 <Tooltip title="A cross-platform game engine used for developing 2D and 3D games." arrow>
                                     <span>Unity</span>
                                 </Tooltip>
                             </li>
-                            <li className="bg-[#d4d4d4] text-black px-4 py-2 rounded-full">
+                            <li className="skill-item">
                                 <Tooltip title="A web-based platform for version control and collaboration using Git." arrow>
                                     <span>GitHub</span>
                                 </Tooltip>
                             </li>
-                            <li className="bg-[#d4d4d4] text-black px-4 py-2 rounded-full">
+                            <li className="skill-item">
                                 <Tooltip title="A relational database management system based on SQL." arrow>
                                     <span>MySQL</span>
                                 </Tooltip>
                             </li>
-                            <li className="bg-[#d4d4d4] text-black px-4 py-2 rounded-full">
+                            <li className="skill-item">
                                 <Tooltip title="Basic and fundamentals of Google Cybersecurity." arrow>
                                     <span>Cybersecurity Fundamentals</span>
                                 </Tooltip>
@@ -100,27 +100,27 @@ function Home() {
                 </div>
             </section>
 
-            <section id="projects" className="w-full min-h-screen">
-                <div className='flex flex-col pl-10 items-start gap-15 pt-35 mb-5'>
-                    <h1 className='text-medium mb-0 -mt-20 tracking-tighter font-[Montserrat]'>Projects • Programs • Systems</h1>
+            <section id="projects" className="w-full min-h-screen mobile-projects">
+                <div className='projects-header'>
+                    <h1 className='projects-title'>Projects • Programs • Systems</h1>
                 </div>
-                <div className="w-full flex">
+                <div className="projects-grid">
                     {/* Left half */}
-                    <div className="w-1/2 h-130 bg-[#191919] border flex items-center justify-center ml-10">
+                    <div className="projects-left">
                         Left (50% width)
                     </div>
 
                     {/* Right half */}
-                    <div className="w-200 h-full flex flex-col mr-10">
-                        <div className="h-65 bg-[#191919] border flex items-center justify-center">
-                            <div className="w-1/2 h-full bg-[#191919] border flex items-center justify-center">
+                    <div className="projects-right">
+                        <div className="projects-right-top">
+                            <div className="projects-right-top-left">
                                 Top Right (25% height)
                             </div>
-                            <div className="w-1/2 h-full bg-[#191919] border flex items-center justify-center">
+                            <div className="projects-right-top-right">
                                 Top Right (25% height)
                             </div>
                         </div>
-                        <div className="h-65 bg-[#191919] border flex items-center justify-center">
+                        <div className="projects-right-bottom">
                             Bottom Right (25% height)
                         </div>
                     </div>

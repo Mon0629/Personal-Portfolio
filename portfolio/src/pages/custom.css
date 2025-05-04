@@ -1,31 +1,237 @@
-/* custom.css */
-
 /* Base styles */
 .text-large {
-    font-size: 7rem;
-  }
-  
-  .text-huge {
-    font-size: 10rem;
-  }
-  
-  .text-medium {
-    font-size: 6.5rem;
-  }
-  
-  
-  /* Responsive styles for small devices */
-  @media (max-width: 640px) {
-    .text-large {
+  font-size: 7rem;
+}
+
+.text-huge {
+  font-size: 10rem;
+}
+
+.text-medium {
+  font-size: 6.5rem;
+}
+
+/* Profile Section */
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 2.5rem;
+  padding-bottom: 5rem;
+  padding-top: 8.75rem;
+  align-items: flex-start;
+  gap: 3.75rem;
+}
+
+.profile-image {
+  background-color: #cccccc;
+  padding-top: 0.5rem;
+}
+
+.profile-content {
+  max-width: 100%;
+  width: 55rem;
+}
+
+.profile-text {
+  font-family: 'Nexa', sans-serif;
+  text-align: justify;
+  font-size: 1.25rem;
+  color: #B1A4A4;
+  line-height: 2rem;
+  letter-spacing: -0.05em;
+}
+
+.skills-title {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.skills-list {
+  list-style-position: inside;
+  color: #B1A4A4;
+  font-family: 'Nexa', sans-serif;
+  text-align: justify;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: -0.05em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-item {
+  background-color: #d4d4d4;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+}
+
+/* Projects Section */
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.5rem;
+  align-items: flex-start;
+  gap: 3.75rem;
+  padding-top: 8.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.projects-title {
+  font-size: 6.5rem;
+  margin: 0;
+  margin-top: -5rem;
+  letter-spacing: -0.05em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.projects-grid {
+  width: 100%;
+  display: flex;
+}
+
+.projects-left {
+  width: 50%;
+  height: 32.5rem;
+  background-color: #191919;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2.5rem;
+}
+
+.projects-right {
+  width: 50rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.5rem;
+}
+
+.projects-right-top {
+  height: 16.25rem;
+  background-color: #191919;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-right-top-left, .projects-right-top-right {
+  width: 50%;
+  height: 100%;
+  background-color: #191919;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-right-bottom {
+  height: 16.25rem;
+  background-color: #191919;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive styles for small devices */
+@media (max-width: 640px) {
+  .text-large {
       font-size: 2rem;
       margin: 0;
       padding: 0;
-    }
-  
-    .text-huge {
+  }
+
+  .text-huge {
       font-size: 2.5rem;
       margin: 0;
       padding: 0;
-    }
   }
-  
+
+  /* Home Section */
+  .mobile-home {
+      padding-left: 1rem;
+      padding-bottom: 5rem;
+  }
+
+  /* Profile Section */
+  .mobile-profile {
+      padding-top: 2rem;
+  }
+
+  .profile-container {
+      flex-direction: column;
+      padding: 1rem;
+      gap: 1rem;
+      padding-top: 2rem;
+  }
+
+  .profile-content {
+      width: 100%;
+      padding: 0 1rem;
+  }
+
+  .profile-text {
+      font-size: 1rem;
+      line-height: 1.5rem;
+  }
+
+  .skills-title {
+      font-size: 1rem;
+  }
+
+  .skills-list {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      gap: 0.25rem;
+  }
+
+  .skill-item {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.8rem;
+  }
+
+  /* Projects Section */
+  .mobile-projects {
+      padding-top: 2rem;
+  }
+
+  .projects-header {
+      padding: 1rem;
+      padding-top: 2rem;
+  }
+
+  .projects-title {
+      font-size: 1.5rem;
+      margin-top: 0;
+  }
+
+  .projects-grid {
+      flex-direction: column;
+  }
+
+  .projects-left, .projects-right {
+      width: 100%;
+      margin: 0;
+  }
+
+  .projects-left {
+      height: 15rem;
+      margin-bottom: 1rem;
+  }
+
+  .projects-right {
+      padding: 0 1rem;
+  }
+
+  .projects-right-top, .projects-right-bottom {
+      height: 10rem;
+  }
+}

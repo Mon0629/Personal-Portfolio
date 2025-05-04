@@ -2,39 +2,52 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, EffectCoverflow } from 'swiper/modules';
 
 const certifications = [
-  { title: 'AWS Certified', id: 1 },
-  { title: 'Google Cloud', id: 2 },
-  { title: 'Microsoft Azure', id: 3 },
-  { title: 'React Developer', id: 4 },
-  { title: 'Node.js Expert', id: 5 },
+  { title: 'Google Cybersecurity Professional Certificate V2', id: 1, image: '/cybersecurity.png' },
+  { title: 'Basic Software Engineering', id: 2, image: '/basicSE.png' },
+  { title: 'Intermediate Software Engineering', id: 3, image: '/intermediateSE.png' },
+  { title: 'Advanced Software Engineering', id: 4, image: '/advancedSE.png' },
+  { title: 'Java Programming NC III', id: 5 },
 ];
 
 export default function CertificationCarousel() {
   return (
-    <section id="certifications" className="min-h-screen w-full flex flex-col items-center justify-center bg-black">
+    <section
+      id="certifications"
+      className="min-h-screen w-full flex flex-col items-center justify-center bg-black px-4">
         <h1 className='text-medium mb-0 tracking-tighter font-[Montserrat]  mt-15'>Certifications</h1>
-      <Swiper
-        modules={[Navigation, EffectCoverflow]}
-        slidesPerView={3}
-        centeredSlides={true}
-        navigation
-        loop={true}
-        effect="coverflow"
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
-          slideShadows: false,
-        }}
-        className="w-[80%] max-w-6xl h-[500px]"
-      >
+        <Swiper
+  modules={[Navigation, EffectCoverflow]}
+  slidesPerView="auto"
+  centeredSlides={true}
+  navigation
+  loop={true}
+  effect="coverflow"
+  coverflowEffect={{
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2.5,
+    slideShadows: false,
+  }}
+  className="w-full max-w-[1200px] h-[600px]"
+>
         {certifications.map((cert) => (
-          <SwiperSlide key={cert.id}>
-            <div className="bg-gray-800 text-white shadow-xl rounded-xl h-full flex items-center justify-center text-xl font-bold text-center px-6">
-              {cert.title}
-            </div>
+          <SwiperSlide
+              key={cert.id}
+              className="!w-[700px] flex justify-center items-center"
+          >
+<div className="relative p-5 bg-black border text-white shadow-xl rounded-xl w-full h-[500px] flex items-center justify-center text-xl font-bold text-center px-6 overflow-hidden">
+  {/* Certificate Image */}
+  <img src={cert.image} className="w-full h-full object-cover rounded-xl" alt={cert.title} />
+
+  {/* Bottom Overlay Title */}
+  <div className="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-md px-4 py-2 rounded-t-xl text-white text-sm font-semibold text-center">
+    {cert.title}
+  </div>
+</div>
+
           </SwiperSlide>
+
         ))}
       </Swiper>
 
