@@ -107,21 +107,21 @@ function Home() {
                 <div className="projects-grid">
                     {/* Left half */}
                     <div className="projects-left">
-                        Left (50% width)
+                        Main Project
                     </div>
 
                     {/* Right half */}
                     <div className="projects-right">
                         <div className="projects-right-top">
                             <div className="projects-right-top-left">
-                                Top Right (25% height)
+                                Project
                             </div>
                             <div className="projects-right-top-right">
-                                Top Right (25% height)
+                                Project
                             </div>
                         </div>
                         <div className="projects-right-bottom">
-                            Bottom Right (25% height)
+                            Project
                         </div>
                     </div>
                 </div>
