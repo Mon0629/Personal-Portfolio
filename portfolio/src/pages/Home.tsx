@@ -4,6 +4,7 @@ import Profile from '../assets/profilepic.png';
 import Skills from '../assets/skill.png';
 import { Tooltip } from '@mui/material';
 import Carousel from '../components/CertificationCarousel';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function Home() {
     return (
@@ -129,7 +130,11 @@ function Home() {
 
             <Carousel />
 
+
+            <SpeedInsights />
         </div>
+
+        
     );
 }
 
