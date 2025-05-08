@@ -96,6 +96,16 @@ function Home() {
                                     <span>Cybersecurity Fundamentals</span>
                                 </Tooltip>
                             </li>
+                            <li className="skill-item">
+                                <Tooltip title="FastAPI" arrow>
+                                    <span>FastAPI</span>
+                                </Tooltip>
+                            </li>
+                            <li className="skill-item">
+                                <Tooltip title="PostMan" arrow>
+                                    <span>PostMan</span>
+                                </Tooltip>
+                            </li>
                             </ul>
                          </div>
                     </div>

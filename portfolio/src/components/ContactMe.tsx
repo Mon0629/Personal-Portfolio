@@ -115,7 +115,7 @@ export default function ContactMe() {
           </button>
         </form>
 
-            <div className='w-1/2 h-full bg-white/10 backdrop-blur-md rounded-xl p-4 flex flex-col'>
+            <div className='w-1/2 h-full bg-white/10 backdrop-blur-md border rounded-xl p-4 flex flex-col'>
                 <p className='font-[Montserrat] text-[30px] text-center'>Let's Connect</p>
                 <p className='font-[Lora] text-[15px] text-center'>Feel free to reach out to me through the following channels:</p>
                 <div className='flex flex-row mt-10'>
