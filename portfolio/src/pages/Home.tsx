@@ -5,6 +5,7 @@ import Skills from '../assets/skill.png';
 import { Tooltip } from '@mui/material';
 import Carousel from '../components/CertificationCarousel';
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import ContactMe from '../components/ContactMe';
 
 function Home() {
     return (
@@ -106,12 +107,10 @@ function Home() {
                     <h1 className='projects-title'>Projects • Programs • Systems</h1>
                 </div>
                 <div className="projects-grid">
-                    {/* Left half */}
                     <div className="projects-left">
                         Main Project
                     </div>
 
-                    {/* Right half */}
                     <div className="projects-right">
                         <div className="projects-right-top">
                             <div className="projects-right-top-left">
@@ -129,7 +128,7 @@ function Home() {
             </section>
 
             <Carousel />
-
+            <ContactMe/>
 
             <SpeedInsights />
         </div>

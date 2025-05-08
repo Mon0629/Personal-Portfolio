@@ -36,7 +36,7 @@ export default function CertificationCarousel() {
               key={cert.id}
               className="!w-[700px] flex justify-center items-center"
           >
-            <div className="relative p-5 bg-black border text-white shadow-xl rounded-xl w-full h-[500px] flex items-center justify-center text-xl font-bold text-center px-6 overflow-hidden">
+            <div className="relative p-5 bg-black border text-white shadow-xl rounded-xl w-full h-[550px] flex items-center justify-center text-xl font-bold text-center px-6 overflow-hidden">
                   <img src={cert.image} className="w-full h-full object-cover rounded-xl" alt={cert.title} />
                   <div className="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-md px-4 py-2 rounded-t-xl text-white text-sm font-semibold text-center">
                   {cert.title}
