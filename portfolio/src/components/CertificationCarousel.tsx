@@ -3,8 +3,6 @@ import { Navigation, EffectCoverflow } from 'swiper/modules';
 
 const certifications = [
   { title: 'Google Cybersecurity Professional Certificate V2', id: 1, image: '/CyberSec.jpg' },
-  { title: 'Basic Software Engineering', id: 2, image: '/basicSE.png' },
-  { title: 'Intermediate Software Engineering', id: 3, image: '/intermediateSE.png' },
   { title: 'Advanced Software Engineering', id: 4, image: '/advancedSE.png' },
   { title: 'Java Programming NC III', id: 5, image: '/Tesda.jpg' },
 ];
@@ -14,7 +12,7 @@ export default function CertificationCarousel() {
     <section
       id="certifications"
       className="min-h-screen w-full flex flex-col items-center justify-center bg-black px-4">
-        <h1 className='text-medium mb-0 tracking-tighter font-[Montserrat]  mt-15'>Certifications</h1>
+        <h3 className='text-medium mb-0 tracking-tighter font-[Montserrat]  mt-15 text-[#eb4a4a]'>Certifications</h3>
         <Swiper
   modules={[Navigation, EffectCoverflow]}
   slidesPerView="auto"
